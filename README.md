@@ -6,16 +6,16 @@
 * [2. Proceso de Diseño](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 .
-***
+*
 
 ## 1. Descripción general del proyecto
 
 "Pokedex" es un sitio web en el cual el usuario podrá encontrar toda la información necesesaria para ser un maestro pokemón. Podras conocer los 251 pokemón y descubrir las caracteristicas de cada uno de los personajes mediante la barra de menú donde la sección Pokemón te permite conocer los tipos (agua,volador electrico,etc),ordenarlos de forma (alfabetica y por númerica ),la sección mejores movimientos te permite conocer a los pokemon con maximo poder y  el top de frecuencia pokemón donde descubriras el rago de aparición de cada uno.
 
-***
+*
 ## Objetivo de la página
 Brindar al usuario información util para conocer mejor a los personajes de pokemon Go mediante diferentes categorías, filtros y/o búsqueda por nombre.
-***
+*
 ## 2. Proceso de Diseño
 
 Definimos los usuarios con los que debiamos trabajar, identificando sus necesidades mediante algunas herramientas como encuestas y entrevista.
@@ -48,7 +48,7 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 
 ## 2do Prototipo de alta fidelidad
 
-![2do Prototipo de baja fidelidad](https://i.ibb.co/FKB72Xz/pantala-busqueda-2.png)
+![2do Prototipo de baja fidelidad](https://i.ibb.co/q5Dz6Sn/prototipo-baja2.jpg)
 
 ## 3er Prototipo de alta fidelidad versión mobile
 
@@ -62,12 +62,6 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 
 ## Versión Mobile
 ![vista 1 de la web](./img_readme/vista_mobile.gif)
-
-
-
-
-
-
 
 
 
@@ -125,7 +119,3 @@ usuario necesita.
 * [ ] Crear prototipos para obtener feedback e iterar.
 * [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 * [ ] Planear y ejecutar tests de usabilidad.
-
-
-
-

@@ -1,3 +1,11 @@
+import { createCard} from '../src/data.js';
+
+//import { createCard, example, anotherExample } from '../src/data.js';
+/*
+describe('example', () => {
+  it('is a function', () => {
+    expect(typeof example).toBe('function');
+  });
 // import {data , anotherExample } from '../src/data.js';
 import {sortSpawnChance} from '../src/data.js';
 import data from '../src/data/pokemon/pokemon.js';
@@ -35,5 +43,12 @@ describe('sortSpawnChance', () => {
   it('que vuelva la diferencia de dos pokemon sortSpawnChance', () => {
     expect(sortSpawnChance(pokemon[0],pokemon[1]).toBe(pokemon[0] - pokemon[1]));
   });
+});*/
+//Mistest
+describe('createCard', () => {
+  it('is a function', () => {
+    expect(typeof createCard).toBe('function');
+  });
 });
+
 
