@@ -28,7 +28,7 @@ export const filterData=(data,type,condicion)=>{
       resultado=data.filter(poke=>poke.evolution.candy===condicion);
       break;
     case "letra":
-      const expresion= new RegExp(condicion,"i"); 
+      // const expresion= new RegExp(condicion,"i");
       resultado=data.filter(poke=>expresion.test(poke.name));
       break;
   }
