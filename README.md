@@ -36,7 +36,7 @@ Luego de tener listo el prototipo pedimos a nuestros usuarios que interactuen y 
 
 Luego de recibir feedback por el pirmer prototipo mejoramos la vista de la pantalla inicial de la web,la ubicación de los botones y la información en la ficha de de cada pokemón.
 
-![2do Prototipo de baja fidelidad](https://i.ibb.co/Dp1NdJb/prototipo-baja2.jpg)
+![2do Prototipo de baja fidelidad](https://i.ibb.co/q5Dz6Sn/prototipo-baja2.jpg)
 
 #### Prototipo de alta fidelidad
 
@@ -48,7 +48,7 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 
 ## 2do Prototipo de alta fidelidad
 
-![2do Prototipo de baja fidelidad](https://i.ibb.co/q5Dz6Sn/prototipo-baja2.jpg)
+![2do Prototipo de alta fidelidad](https://i.ibb.co/r2rDsmG/pantala-busqueda-2.png)
 
 ## 3er Prototipo de alta fidelidad versión mobile
 
@@ -57,13 +57,23 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 ## Versión Final
 
 ## Versión Desktop
+
+## Pantalla Inicio
 ![Vista 1 de la web](https://i.ibb.co/y4GCkJC/deskopt.png)
+
+##
 ![vista 2 de la web](https://i.ibb.co/8YDJK1v/deskopt-pokemon.png)
+
+##
 ![vista 3 de la web](https://i.ibb.co/7CzYCxv/deskopt-batalla.png)
+
+##
 ![vista 4 de la web](https://i.ibb.co/zXh8j9c/deskopt-estadistica.png)
 
 ## Versión Mobile
+##
 ![vista 1 de la web](https://i.ibb.co/VxR2NBd/mobile-inicio.png)
+##
 ![vista 1 de la web](https://i.ibb.co/4KG6sTp/mobile-modal.png)
 
 
