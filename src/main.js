@@ -9,6 +9,7 @@ let arreglo=data.pokemon.slice();//creamos el arreglo temporal que se ira modifi
 //-----------------FUNCIONES QUE SE USARAN PARA CREAR LOS DATOS DE LAS FICHAS POKEMON  Y LA VENTANA MODAL-----------------------------
 
 //CREAMOS LOS TIPOS DE CADA POKEMON CON SUS CLASES PARA DARLE COLOR POR TIPO
+// aqui pasamos un pokemos uno por uno typePokemon
 const typePokemon=(data)=>{//Recordar que esta data es primero pasado por un map
 	let arrayTipo="";
 	for(let i=0;i<data.type.length;i++){
@@ -61,8 +62,8 @@ const creatreModalCelular=(pokemon)=>{
 	<div class="modal-seccion-celular">
 		<div class="seccion-imagen seccion-item">
 			<img class="item-imagen" src="${pokemon.img}">
-		</div>		
-	</div>	
+		</div>
+	</div>
 	<div class="modal-footer-celular">
 		<div class="footer-puntos-celular">
 			<table class="tabla-puntos">
@@ -83,7 +84,6 @@ const creatreModalCelular=(pokemon)=>{
 		 		<th>Ataque Especial</th>
 	  		 	<td>${attack(pokemon)}</td>
 			</tr>
-	  
 	  		</table>
 		</div>
 	</div>
@@ -161,7 +161,6 @@ const createModal=(pokemon)=>{
 		 		<th>Ataque Especial</th>
 	  		 	<td>${attack(pokemon)}</td>
 			</tr>
-	  
 	  		</table>
 		</div>
 		<div class="footer-evoluciones item-footer">
@@ -176,7 +175,7 @@ const createModal=(pokemon)=>{
 const createCard=(pokemon)=>{
   return `
   <div class="ficha-pokemon">
-    <h1 > N°${pokemon.num}</h1>
+    <h1 > N° ${pokemon.num }</h1>
     <h2> ${pokemon.name}</h2>
 		<div class="ficha-contenido">
 			<div class="ficha-imagen">
@@ -186,8 +185,8 @@ const createCard=(pokemon)=>{
         <h3><strong>Generación: </strong> ${pokemon.generation.name}</h3>
 				<h3><strong>Huevo: </strong> ${pokemon.egg}</h3>
 				<h3> frecuencia: ${parseFloat(pokemon['spawn-chance'] * 100).toFixed(2)}% </h3>
-        <h3> ${typePokemon(pokemon)}</h3>
-      </div>	 
+		<h3> ${typePokemon(pokemon)}</h3>
+      </div>
     </div>
     <button class="btn-modal" id="${pokemon.name}">Ver Ficha</button>
   </div>`
@@ -202,14 +201,17 @@ const showModalCelular=(data)=>{
 }
 //FUNCION QUE MOSTRARA LAS CARD CREADAS
 const show=(data)=>{
+	//map entra a cada pokemon //
   return `${data.map(createCard).join('')}`
 };
-//CREAMOS LA FUNCION QUE ABRIRA LA VENTANA MODAL AL HACER CLICK EN VER FICHA POKEMON
+//-----------------------CREAMOS LA FUNCION QUE ABRIRA LA VENTANA MODAL AL HACER CLICK EN VER FICHA POKEMON-----------------------//
 const fillModal=(boton)=>{
 	boton.addEventListener("click",function(evt){
-		//prueba de capturar ancho de la pantalla
-		const ancho=screen.width;
+		//prueba de capturar ancho de la pantalla 
+		const ancho=screen.width; //ancho de tu pantalla//
+		//
 		const pokemon=evt.target.id;
+		// console.log(evt.target);
 		let modal=document.getElementById("modal");
 		let cmodal=document.getElementById("ctn-modal");
 		cmodal.style.visibility="visible";
@@ -221,7 +223,7 @@ const fillModal=(boton)=>{
 		}
 
 		let close=document.querySelectorAll(".close-modal")[0];
-		close.addEventListener("click",function(e){
+		close.addEventListener("click",function(){
 			modal.classList.add("modal-close");
 			setTimeout(function(){
 				cmodal.style.visibility="hidden";
@@ -232,7 +234,7 @@ const fillModal=(boton)=>{
 				modal.classList.add("modal-close");
 				setTimeout(function(){
 					cmodal.style.visibility="hidden";
-				},900)	
+				},900)
 			}
 		})
 	});
@@ -242,7 +244,7 @@ const fillModal=(boton)=>{
 let pantalla_inicio=document.getElementById("pantalla_inicio");
 const showInicio=()=>{
 	//OCULTAMOS ELEMENTOS DE OTRAS PAGINAS
-	hojaPokemon.classList.add("ocultarElemento");	
+	hojaPokemon.classList.add("ocultarElemento");
 	hojaMovimiento.classList.add("ocultarElemento");
 	hojaEstadistico.classList.add("ocultarElemento");
 	//MOSTRAMOS ELEMENTOS
@@ -267,6 +269,7 @@ let filtroAparicion=document.getElementById("filtro-aparicion");
 let butonFichas="";
 //-----------------------------FUNCION QUE MUESTRA TODOS LOS POKEMON -----------------------------------
 const showAll=()=>{
+	// slice genera uan copia de array//
 	arreglo=data.pokemon.slice();
 	containerImg.innerHTML=show(arreglo);
 	title.innerText=`Se muestran ${arreglo.length} pokémon`;
@@ -287,6 +290,7 @@ const searchLetter=()=>{
 		butonFichas.forEach(fillModal);
 	}else{
 		containerImg.innerHTML="No se encontro pokemon";
+		// title.innerHTML="";
 	}
 }
 document.getElementById("itBusqueda").addEventListener("keyup",searchLetter)
@@ -295,8 +299,11 @@ document.getElementById("itBusqueda").addEventListener("keyup",searchLetter)
 //Creamos un array donde estaran los 18 tipo de pokemon
 let arrayTypes=data.pokemon.map(function(poke){
 	return	poke.type;
+	
 });
+// console.log(arrayTypes);
 arrayTypes=((arrayTypes.join(' ')).replace(/,/g,' ')).split(' ');//
+// console.log(arrayTypes);
 let newArrayTypes=arrayTypes.filter((el,index)=>arrayTypes.indexOf(el)===index);//filtramos solo los tipos diferentes
 //Creamos los botones de  tipo pokemon
 let types='';
@@ -309,9 +316,9 @@ for(let i=0;i<newArrayTypes.length;i++){
 const filtrado=(boton)=>{
 	boton.addEventListener("click", function(evt){
 	const hijo = evt.target.name;
-	console.log(hijo);
+	// console.log(hijo);
 	const tipoFiltro=evt.target.className;
-	console.log(tipoFiltro);
+	// console.log(tipoFiltro);
 	arreglo=filterData(data.pokemon,tipoFiltro,hijo);//guardo en mi array temporal la nueva data a mostrarse}
 	if(tipoFiltro==="aparicion"){
 		const dataAparicion=sortData(arreglo,"Aparicion");
@@ -406,7 +413,7 @@ const showCombate=()=>{
 	const pokemon1=document.getElementById("Name1").value;
 	const pokemon2=document.getElementById("Name2").value;
 	const datepoke1=filterData(data.pokemon,"name",pokemon1);
-	console.log(datepoke1);
+	// console.log(datepoke1);
 	const datepoke2=filterData(data.pokemon,"name",pokemon2);
 	fMovimientos.innerHTML=`<div class="cBatalla"><div class="cImg"><h1>${datepoke1[0].name}</h1><img id="bPoke1" src="${datepoke1[0].img}"></div><div class="cDatos1"></div></div>
 	<div class="cBatalla"><div class="cImg"><h1>${datepoke2[0].name}</h1><img id="bPoke2" src="${datepoke2[0].img}"></div><div class="cDatos2"></div></div>`
@@ -426,12 +433,12 @@ let nEstadistico=document.querySelectorAll(".nav-estadistico")[0];
 const funcionTypes=(data,tipos)=>{
   let totalTipos=[];
   for(let i=0;i<tipos.length;i++){
+// añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
     totalTipos.push(filterData(data,"tipo",tipos[i]).length);
   }
   return totalTipos;
 }
 let variable=funcionTypes(data.pokemon,newArrayTypes);
-
 //FUNCION QUE GRAFICA LA PESTAÑA ESTADISTICA POKEMON
 const showEstadistica=()=>{
 	//Quitamos todo los elementos de otras hojas
@@ -446,8 +453,9 @@ const showEstadistica=()=>{
 	//Llena la barra de tipos de pokemon
 	nEstadistico.innerHTML=types;
 	//Llena la grafica
+
 	let conteinerChart=document.getElementById("myChart").getContext("2d");
-	let myChart=new Chart(conteinerChart,{
+	new Chart(conteinerChart,{
 		type:"horizontalBar",
 		data:{
 		labels:newArrayTypes,
@@ -477,7 +485,8 @@ const showEstadistica=()=>{
 	},
 })
 	//FUNCION QUE TRAE EL CALCULO POR TIPO  POKEMON
-let typeSon=document.querySelectorAll("div.nav-estadistico> a.tipo");//capturamos a cada elemenot a-tipo que estadentro  div filtro para darle un evento
+	let typeSon=document.querySelectorAll("div.nav-estadistico> a.tipo");//capturamos a cada elemenot a-tipo que esta dentro  div filtro para darle un evento
+	//ForEach método llama a una función una vez para cada elemento de una matriz, en orden.
 	typeSon.forEach((unHijo)=>{
 		unHijo.addEventListener("click", function(evt){
 			const hijo = evt.target.name;

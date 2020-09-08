@@ -57,12 +57,14 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 ## Versión Final
 
 ## Versión Desktop
-![Vista 1 de la web](./img_readme/vista1.gif)
-![vista 2 de la web](./img_readme/vista2.gif)
+![Vista 1 de la web](https://i.ibb.co/y4GCkJC/deskopt.png)
+![vista 2 de la web](https://i.ibb.co/8YDJK1v/deskopt-pokemon.png)
+![vista 3 de la web](https://i.ibb.co/7CzYCxv/deskopt-batalla.png)
+![vista 4 de la web](https://i.ibb.co/zXh8j9c/deskopt-estadistica.png)
 
 ## Versión Mobile
-![vista 1 de la web](./img_readme/vista_mobile.gif)
-
+![vista 1 de la web](https://i.ibb.co/VxR2NBd/mobile-inicio.png)
+![vista 1 de la web](https://i.ibb.co/4KG6sTp/mobile-modal.png)
 
 
 ## 3. Objetivos de aprendizaje

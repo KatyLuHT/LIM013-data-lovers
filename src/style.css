@@ -1,11 +1,11 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 header{
-	width: 100%;
-    background:linear-gradient(to right,#e0130b,#200be0);
+    width: 100%;
+    background:linear-gradient(to right,#ff2600,#1b5dd8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,15 +18,8 @@ header{
     padding-left: 2%;
 }
 body{
-	background: #fff;
-}
-#titulo-pokemon{
-	font-family: 'Sigmar One', cursive;
-/* /font-family: 'Alfa Slab One', cursive;/ */
-	font-size: 1.8em;
-	color:#FDEA5F;
-	text-shadow: -3px -3px 2px #331C8C, 3px -3px 2px #331C8C, -3px 3px 2px #331C8C, 3px 3px 2px #331C8C;
-	margin-top: 2%;
+	background:white;
+
 }
 #imagenpoke{
     width: 100%;
@@ -36,7 +29,7 @@ body{
 }
 .icono-menu{
     font-size: 110%;
-    color: #f0ebeb;
+    color: #fdf9f9;
     display: none;
 }
 
@@ -49,18 +42,20 @@ body{
 }
 
 .menu li a{
-    display: block; /*/para poder darle pading/*/
+    display: block;
     padding: 1.8em 1em;
-    color: #063359;
+    color: #fff;
     text-decoration: none;
 		font-size: 1.1em;
 }
 .menu li i{
     margin-right: 10px;
 }
+/* cuando pasamos por el menu cambia de color*/
 .menu a:hover{
-	background: #b5ffff;
+	background: #136ed6;
 }
+
 /* /======================================================HOJA INICIO ===============================================/ */
 
 .Contenido-inicio{
@@ -68,18 +63,20 @@ body{
 	flex-direction: column;
 	align-items: center;
 	position:bottom;
-	padding-top: 100px;
+	padding-top: 40px;
 	font-family: cursive;
+
 }
 #imagen_inicio{
 	width: 100%;
-	height: 50%;
+	height: 20%;
 }
 /* /======================================================HOJA POKEMON ===============================================/ */
 .hoja-pokemon{
-  display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
 }
 /* /-------------Contendor busqueda por nombre--------------/ */
 .contenedor-buscador{
@@ -100,7 +97,7 @@ body{
 #btn-todo{
 	color: #fff;
 	text-align: center;
-	background-color: #4BAADE;
+	background-color: #4b86de;
 	border-radius: 12%;
 	margin-left: 2em;
   width: 5%;
@@ -130,6 +127,7 @@ body{
 	background-color: #fff;
 	display: none;
 	}
+	/*l */
 .filtro a, .nav-estadistico a{
 	background-color: #EEEBF6;
 	padding: 0.3em 1em;
@@ -144,7 +142,7 @@ body{
 	background-color: #EEEBF6;
 }
 .btn-filtro{
-	width: 33.3%;
+	width: 25%;
 	min-width: 170px;
 	background-color: #fff;
 	padding: 0.5em;
@@ -156,7 +154,18 @@ body{
 }
 /* /-------------Contendor de combobox de ordenamiento--------------/ */
 .contenedor-ordenamiento{
+	display: flex;
+	justify-content: center;
 	margin-top: 2%;
+}
+#titulo-pokemon{
+	font-family: 'Sigmar One', cursive;
+/* font-family: 'Alfa Slab One', cursive; */
+	font-size: 1.8em;
+	color:#FDEA5F;
+	text-shadow: -3px -3px 2px #331C8C, 3px -3px 2px #331C8C, -3px 3px 2px #331C8C, 3px 3px 2px #331C8C;
+	margin-top: 2%;
+	text-align: center;
 }
 
 #contenedor-imagenes{
@@ -173,7 +182,7 @@ body{
 	margin: 3% 2%;
 	padding: 1% 1.5%;
   width: 26%;
-	min-width: 250px;
+	min-width: 255px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -210,19 +219,27 @@ body{
 	font-weight: 400;
 }
 
+.ficha-imagen{
+	display: flex;
+	}
+	#img-ficha-pokemon{
+		border: solid #819686;
+		width: 100%
+	}
 .ficha-pokemon h1{
 	align-self: flex-start;
 	font-size: 1.1em;
 }
 .ficha-contenido{
-		display: flex;
-		padding: 2% 8%;
+	display: flex;
+	width: 100%;
+	padding: 2% 6%;
+	justify-content: center;
 }
 .ficha-boton{
-	width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+	justify-content: center;
 }
 span{
 	color:#fff;
@@ -296,9 +313,9 @@ span{
 	font-size: 14px;
 	width: 120%;
 }
+
+/* ===============================================VENTANA MODAL========================================*/
 .contenedor-modal{
-	/* /background-image: linear-gradient(to top,#d9ded8   0%, #ebc0fd 100%);/ */
-/*	background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);*/
 	visibility: hidden;
 	position: fixed;
 	width: 100%;
@@ -323,7 +340,7 @@ span{
 	font-family: 'Alegreya Sans', sans-serif;
 }
 .modal-close{
-	transform: translateY(-200%);
+	transform: translateY(-200%); /*desparesca la ventan modal con desplezamiento*/
 }
 .close-modal{
 	position:absolute;
@@ -427,7 +444,7 @@ th{
 	border:solid 2px #45506B;
 }
 .ataque{
-	color: #45506B;;
+	color: #45506B;
 }
 
 .footer-evoluciones{
@@ -455,21 +472,51 @@ th{
 	padding: 2%;
 	background: #fff;
 }
+
+/* /=============================MODAL PARA CELULAR============/ */
+.modal-encabezado-celular{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	padding-top:2% ;
+	padding-bottom:1% ;
+	border-bottom:4.5px solid #6783DC;
+	background: #CEF2E8;
+}
+.modal-seccion-celular{
+	display: flex;
+	justify-content:center;
+	height: 30%;
+	padding-top: 1.5%;
+}
+.modal-footer-celular{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding-top: 5%;
+}
+.footer-puntos-celular{
+	width: 98%;
+	color: #45506B;
+}
+
 .hoja-estadistico{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 .header-estadistico{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2%;
+	text-align: center;
 }
 .img-pikachu{
 	display: flex;
-	width: 8%;
-	border:solid 1px;
+	width: 15%;
+	min-width: 100px;
 }
 #pokemon{
 	width: 100%;
@@ -495,12 +542,21 @@ th{
 	flex: 1;
 	height: 50vh;
 }
-.ocultarElemento{
-		display: none;
+
+.resultadoCalculo h2{
+	line-height: 3em;
+	color:#fff;
+	text-align: center;
 }
-.mostrarElemento{
-		display: flex;
+.resultadoCalculo h3{
+	line-height: 2.5em;
+	text-align: center;
 }
+.resultadoCalculo h3 >span{
+	font-size: 1.5em;
+	color: black;
+}
+
 .hoja-movimientos{
 	display: flex;
 	flex-direction: column;
@@ -514,16 +570,34 @@ th{
 .img-batalla{
 	display: flex;
 	width: 75%;
+	min-width: 320px;
 }
 #batalla{
 	width: 100%;
 }
+
 .section-movimiento{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	margin-top: 2%;
 	width: 80%;
+	flex-wrap: wrap;
+	font-size: 1.2em;
+	border:solid;
+}
+.itemS-movimiento{
+	margin-right: 10%;
+	margin-bottom: 1%;
+border:solid #199939;
+}
+#btnCombatir{
+	text-align: center;
+	padding:1.5em;
+	border: none;
+	border-radius: 4px;
+	color:#fff;
+	background:#322274;
 }
 .footer-movimiento{
 	display: flex;
@@ -553,12 +627,19 @@ th{
 
 }
 footer{
-		align-self: flex-end;
-		position: relative;
-		background-color: #081e80;
-		line-height: 3;
-		text-align: center;
-		width:100%;
+	align-self: flex-end;
+	background-color: #0f0d81;
+	line-height: 3;
+	text-align: center;
+	width:100%;
+	color: #fff; /*agrege*/
+
+}
+.ocultarElemento{
+	display: none;
+}
+.mostrarElemento{
+	display: flex;
 }
 @media (max-width:760px){
     .icono-menu{
@@ -567,7 +648,7 @@ footer{
     .menu{
         position: absolute;
         margin-top:235px;
-        background:#1cdddd ;
+        background:#0b0566 ;
         width: 100%;
         transition: all 0.5s;
         transform: translateX(-100%);
@@ -586,34 +667,7 @@ footer{
         transform: translateX(0%) ;
     }
 }
-/* tarjeta 3d */
- /* .imagen_tarjeta{
-    height: 250px;
-    width: 250px;
-    margin: auto;
-	-webkit-perspective: 700;
-}
-.tarjeta{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 2s;
-}
-.tarjeta:hover{
-    transform: rotateY(180deg);
-}
-.lado{
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-}
-.frente{
-    background: #c41818;
-}
-.atras{
-    background:#199939;
-    transform: rotateY(180deg);
-}
- */
+
+
+
+
