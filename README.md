@@ -61,13 +61,13 @@ Lo testeamos nuevamente con 1 usuario y nos hizo notar que la barra donde mostr�
 ## Pantalla Inicio
 ![Vista 1 de la web](https://i.ibb.co/y4GCkJC/deskopt.png)
 
-##
+## Pantalla Pokémon
 ![vista 2 de la web](https://i.ibb.co/8YDJK1v/deskopt-pokemon.png)
 
-##
+## Pantalla batalla Pokémon
 ![vista 3 de la web](https://i.ibb.co/7CzYCxv/deskopt-batalla.png)
 
-##
+## Pantalla Estadistica Pokémon
 ![vista 4 de la web](https://i.ibb.co/zXh8j9c/deskopt-estadistica.png)
 
 ## Versión Mobile
