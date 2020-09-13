@@ -121,7 +121,7 @@ const createModal=(pokemon)=>{
 		<div class="seccion-imagen seccion-item">
 			<img class="item-imagen" src="${pokemon.img}">
 			<p>${pokemon.about}</</p>
-		</div>	
+		</div>
 		<div class="Debilidad-Fortaleza seccion-item">
 			<table class="tabla-debilidadFortaleza">
 			<tr>
@@ -299,10 +299,11 @@ document.getElementById("itBusqueda").addEventListener("keyup",searchLetter)
 //Creamos un array donde estaran los 18 tipo de pokemon
 let arrayTypes=data.pokemon.map(function(poke){
 	return	poke.type;
-	
+
 });
 // console.log(arrayTypes);
 arrayTypes=((arrayTypes.join(' ')).replace(/,/g,' ')).split(' ');//
+// arrayTypes=((arrayTypes.join(' ')).replace(/,/g," "));
 // console.log(arrayTypes);
 let newArrayTypes=arrayTypes.filter((el,index)=>arrayTypes.indexOf(el)===index);//filtramos solo los tipos diferentes
 //Creamos los botones de  tipo pokemon

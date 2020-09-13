@@ -15,6 +15,10 @@ const dataTest=[
     ],
     "spawn-chance": "0.69",
     "egg": "2 km",
+
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
   },
   {
     "num": "002",
@@ -28,6 +32,10 @@ const dataTest=[
     ],
     "spawn-chance": "0.253",
     "egg": "5 km",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "003",
@@ -42,7 +50,11 @@ const dataTest=[
     ],
     "spawn-chance": "0.0031",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
+
   {
     "num": "004",
     "name": "squirtle",
@@ -55,6 +67,9 @@ const dataTest=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   },
   {
     "num": "005",
@@ -68,6 +83,9 @@ const dataTest=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   }
 ]
 
@@ -84,6 +102,9 @@ const dataResultType=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   }
 ]
 
@@ -100,6 +121,9 @@ const dataResultGeneration=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   }
 ]
 
@@ -116,6 +140,9 @@ const dataResultEgg=[
   ],
   "spawn-chance": "0.253",
   "egg": "5 km",
+  "evolution": {
+    "candy": "charmander candy",
+  }
 },
 ]
 
@@ -132,6 +159,10 @@ const dataResultSpaw=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   }
 ]
 
@@ -150,6 +181,9 @@ const dataResultAlphaUpward=[
     ],
     "spawn-chance": "0.69",
     "egg": "2 km",
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
   },
   {
     "num": "005",
@@ -163,6 +197,10 @@ const dataResultAlphaUpward=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   },
   {
     "num": "003",
@@ -177,6 +215,10 @@ const dataResultAlphaUpward=[
     ],
     "spawn-chance": "0.0031",
     "egg": "not in eggs",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "002",
@@ -190,6 +232,10 @@ const dataResultAlphaUpward=[
     ],
     "spawn-chance": "0.253",
     "egg": "5 km",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
 
   {
@@ -204,6 +250,9 @@ const dataResultAlphaUpward=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   },
 ]
 
@@ -222,6 +271,10 @@ const dataResultAlphafalling=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   },
 
   {
@@ -236,6 +289,10 @@ const dataResultAlphafalling=[
     ],
     "spawn-chance": "0.253",
     "egg": "5 km",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "003",
@@ -250,7 +307,12 @@ const dataResultAlphafalling=[
     ],
     "spawn-chance": "0.0031",
     "egg": "not in eggs",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
+
   {
     "num": "005",
     "name": "caterpie",
@@ -263,6 +325,10 @@ const dataResultAlphafalling=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   },
 
   {
@@ -278,6 +344,9 @@ const dataResultAlphafalling=[
     ],
     "spawn-chance": "0.69",
     "egg": "2 km",
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
   },
 ]
 
@@ -295,6 +364,9 @@ const dataResultNumUpward=[
     ],
     "spawn-chance": "0.69",
     "egg": "2 km",
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
   },
   {
     "num": "002",
@@ -308,6 +380,10 @@ const dataResultNumUpward=[
     ],
     "spawn-chance": "0.253",
     "egg": "5 km",
+
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "003",
@@ -322,6 +398,9 @@ const dataResultNumUpward=[
     ],
     "spawn-chance": "0.0031",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "004",
@@ -335,6 +414,10 @@ const dataResultNumUpward=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   },
   {
     "num": "005",
@@ -348,7 +431,10 @@ const dataResultNumUpward=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+    "evolution": {
+      "candy": "caterpie candy",
   }
+}
 ]
 
 
@@ -366,6 +452,10 @@ const dataResultNumFalling=[
     ],
     "spawn-chance":"3.032",
     "egg": "2 km",
+
+    "evolution": {
+      "candy": "caterpie candy",
+    }
   },
   {
     "num": "004",
@@ -379,6 +469,9 @@ const dataResultNumFalling=[
     ],
     "spawn-chance": "0.58",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "squirtle candy",
+    }
   },
   {
     "num": "003",
@@ -393,6 +486,9 @@ const dataResultNumFalling=[
     ],
     "spawn-chance": "0.0031",
     "egg": "not in eggs",
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
 
   {
@@ -407,6 +503,9 @@ const dataResultNumFalling=[
     ],
     "spawn-chance": "0.253",
     "egg": "5 km",
+    "evolution": {
+      "candy": "charmander candy",
+    }
   },
   {
     "num": "001",
@@ -421,6 +520,9 @@ const dataResultNumFalling=[
     ],
     "spawn-chance": "0.69",
     "egg": "2 km",
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
   },
 
 ]
@@ -429,6 +531,48 @@ const dataResultCalculate=[
   1, 20
 
 
+]
+
+const dataResultCandy=[
+
+  {
+    "num": "001",
+    "name": "bulbasaur",
+    "generation": {
+      "num": "generation i",
+      "name": "kanto"
+    },
+    "type": [
+      "grass",
+      "poison"
+    ],
+    "spawn-chance": "0.69",
+    "egg": "2 km",
+
+    "evolution": {
+      "candy": "bulbasaur candy",
+    }
+  }
+]
+
+ const dataResultLetter =[
+{"num": "001",
+  "name": "bulbasaur",
+  "generation": {
+    "num": "generation i",
+    "name": "kanto"
+  },
+  "type": [
+    "grass",
+    "poison"
+  ],
+  "spawn-chance": "0.69",
+  "egg": "2 km",
+
+  "evolution": {
+    "candy": "bulbasaur candy",
+  }
+}
 ]
 
 
@@ -440,39 +584,24 @@ describe('filterData', () => {
   it('should return an array for "dataTest","type","water"', () => {
     expect(filterData(dataTest,"tipo","water")).toEqual(dataResultType);
   });
-})
 
-describe('filterData', () => {
-  it('is a function', () => {
-    expect(typeof filterData).toBe('function');
-  });
+// Generacion
   it('should return an array for "dataTest","generation","johto"', () => {
     expect(filterData(dataTest,"generacion","johto")).toEqual(dataResultGeneration);
   });
-})
 
-describe('filterData', () => {
-  it('is a function', () => {
-    expect(typeof filterData).toBe('function');
-  });
+  // Huevo
   it('should return an array for "dataTest","egg","5 km"', () => {
     expect(filterData(dataTest,"huevo","5 km")).toEqual(dataResultEgg);
   });
 })
-
-describe('filterData', () => {
-  it('is a function', () => {
-    expect(typeof filterData).toBe('function');
-  });
+// Frecuencia
   it('should return an array for "dataTest","aparicion","medio"', () => {
     expect(filterData(dataTest,"aparicion","Medio")).toEqual(dataResultSpaw);
   });
-})
 
 
-
-
-//
+// Ordenar 
 
 describe('sortData', () => {
   it('is a function', () => {
@@ -483,33 +612,17 @@ describe('sortData', () => {
     });
   });
 
-  describe('sortData', () => {
-    it('is a function', () => {
-      expect(typeof sortData).toBe('function');
-    });
     it('should return an array for "order-falling","Z-A"', () => {
         expect(sortData(dataTest,"Z-A")).toEqual(dataResultAlphafalling);
-      });
-    });
-
-    describe('sortData', () => {
-      it('is a function', () => {
-        expect(typeof sortData).toBe('function');
       });
       it('should return an array for "order-num-Upward","1-251"', () => {
           expect(sortData(dataTest,"1-251")).toEqual(dataResultNumUpward);
         });
-      });
-
-      describe('sortData', () => {
-        it('is a function', () => {
-          expect(typeof sortData).toBe('function');
-        });
         it('should return an array for "order-num-falling","251-1"', () => {
             expect(sortData(dataTest,"251-1")).toEqual(dataResultNumFalling);
           });
-        });
 
+//Calculo
         describe('computeStats', () => {
           it('is a function', () => {
             expect(typeof computeStats).toBe('function');
@@ -519,34 +632,15 @@ describe('sortData', () => {
           });
         });
 
-
-        // describe('daTest', () => {
-        //   it('is a function', () => {
-        //     expect(typeof computeStats).toBe('function');
-        //   });
-        //   it('should return an array for "order-num-falling","251-1"', () => {
-        //     expect(sortData(dataTest,"251-1")).toEqual(dataResultNumFalling);
-        //   });
-        // });
-
-
-
-
-
-//Mistest
-// verificando que sea funciones
-// describe('filterData', () => {
-//   it('is a function', () => {
-//     expect(typeof filterData).toBe('function');
-//   });
-
-
-
-// });
-
-// describe('sortData', () => {
-//   it('is a function', () => {
-//     expect(typeof sortData).toBe('function');
-//   });
-// });
-
+// Candy
+        describe('filterData', () => {
+          it('is a function', () => {
+            expect(typeof filterData).toBe('function');
+          });
+          it('should return an array for "candy"', () => {
+            expect(filterData(dataTest,"caramelo","bulbasaur candy")).toEqual(dataResultCandy);
+          });
+        });
+        it('should return an array for "dataTest","letter"', () => {
+          expect(filterData(dataTest,"letra","b")).toEqual(dataResultLetter);
+        });

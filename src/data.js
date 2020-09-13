@@ -55,10 +55,10 @@ export const filterData=(data,type,condicion)=>{
 export const sortData=(data,sortBy)=>{
   switch(sortBy){
     case "A-Z":
-      data.sort((a,b)=> a.name.localeCompare(b.name));
+      data.sort((a,b)=> ((a.name>b.name)? 1 :-1));
       break;
     case "Z-A":
-      data.sort((a, b) => b.name.localeCompare(a.name));
+      data.sort((a,b)=> ((b.name>a.name)? 1 :-1));
       break;
     case "1-251":
       data.sort((a, b) => a.num-b.num)
